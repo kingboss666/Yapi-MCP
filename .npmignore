@@ -1,0 +1,7 @@
+src
+example
+
+# Environment variables
+.env
+.env.local
+.env.*.local
