@@ -29,7 +29,3 @@ The server provides the following MCP tools:
 Parameters:
 
 - `apiId` (string): Yapi的接口ID
-
-
-#### 基础框架，参考
-https://github.com/GLips/Figma-Context-MCP
