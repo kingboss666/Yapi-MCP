@@ -23,6 +23,8 @@ export interface GetApiResponse {
   data: ApiInterface;
 }
 
+
+// 使用YApi的API接口
 export class YApiService {
   private readonly baseUrl: string;
   private readonly token: string;

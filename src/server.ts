@@ -84,7 +84,7 @@ export class YapiMcpServer {
     const app = express();
 
     app.get("/sse", async (req: Request, res: Response) => {
-      console.log("New SSE connection established");
+      console.log("新SSE连接建立");
       this.sseTransport = new SSEServerTransport(
         "/messages",
         res as unknown as ServerResponse<IncomingMessage>,
@@ -105,9 +105,9 @@ export class YapiMcpServer {
     });
 
     app.listen(port, () => {
-      console.log(`HTTP server listening on port ${port}`);
-      console.log(`SSE endpoint available at http://localhost:${port}/sse`);
-      console.log(`Message endpoint available at http://localhost:${port}/messages`);
+      console.log(`HTTP服务器在端口${port}上监听`);
+      console.log(`SSE端点在http://localhost:${port}/sse可用`);
+      console.log(`Message端点在http://localhost:${port}/messages可用`);
     });
   }
 }
